@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f2ec;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+}
+
+h1 {
+  font-family: "Bree Serif", serif;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: "Bree Serif", serif;
+  font-size: 3rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #f1f2ec;
+}
+
+p {
+  font-size: 2rem;
+  text-indent: 2rem;
+  text-align: justify;
+  line-height: 2.5rem;
+  margin: 1rem;
+}
+
+label {
+  width: 100%;
+  color: grey;
+  align-self: center;
+}
+label a {
+  color: grey;
+}
+
+.header {
+  background-color: #223371;
+  width: 100vw;
+  height: 6rem;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.header__static {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.header__static__logo {
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.35rem;
+  padding: 0.25rem;
+}
+.header__static img {
+  border-radius: 100%;
+  width: 100%;
+}
+.header__static__title {
+  width: 60vw;
+  padding: 0.75vh 0 1vh 1vw;
+  position: absolute;
+  top: 0;
+  left: 20vw;
+  color: #f1f2ec;
+  background-color: #223371;
+}
+
+.header__navbar__icon {
+  position: absolute;
+  right: 1rem;
+  top: 1.25rem;
+  cursor: pointer;
+  background-color: #223371;
+  z-index: 1;
+}
+.header__navbar__icon__line {
+  background-color: #f1f2ec;
+  height: 0.25rem;
+  width: 3rem;
+  border-radius: 1rem;
+  margin: 0.5rem;
+}
+.header__navbar__ul {
+  background-color: #223371;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  width: 100vw;
+  position: relative;
+  top: -18rem;
+  transition: all 1s ease-in-out;
+  z-index: 0;
+}
+.header__navbar__ul.open {
+  position: relative;
+  top: 5.5rem;
+}
+.header__navbar__ul__li {
+  font-size: 2rem;
+  padding: 0.5rem;
+  opacity: 0;
+}
+.header__navbar__ul__li.fade {
+  opacity: 1;
+}
+.header__navbar__ul__li:nth-child(1) {
+  transition: all 0.8s ease-in;
+}
+.header__navbar__ul__li:nth-child(2) {
+  transition: all 0.85s ease-in;
+}
+.header__navbar__ul__li:nth-child(3) {
+  transition: all 0.9s ease-in;
+}
+.header__navbar__ul__li:nth-child(4) {
+  transition: all 0.95s ease-in;
+}
+.header__navbar__ul__li:nth-child(5) {
+  transition: all 1s ease-in;
+}
+
+.active a {
+  color: #82bcee;
+}
+
+.footer {
+  width: 100vw;
+  height: fit-content;
+  padding-top: 1rem;
+  background-color: #223371;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__redes p {
+  color: #f1f2ec;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.footer__redes ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+.footer__redes ul li {
+  width: 5rem;
+  height: 5rem;
+}
+.footer__redes ul li img {
+  width: 100%;
+  filter: invert(98%) sepia(17%) saturate(217%) hue-rotate(33deg) brightness(103%) contrast(90%);
+}
+.footer a {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.index__aside {
+  margin: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.index__aside img {
+  width: 100%;
+}
+
+.index__section__cita {
+  font-style: italic;
+}
+
+.index__section__autor {
+  text-align: right;
+}
+.index__section__autor a {
+  color: blue;
+}
+
+.index__section__aclaracion {
+  font-weight: bold;
+}
+
+.horarios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.horarios__direccion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.horarios__direccion__mapa--md {
+  display: none;
+}
+
+.sobreNosotros__aside {
+  margin: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.sobreNosotros__aside img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */

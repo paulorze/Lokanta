@@ -1,0 +1,59 @@
+@use './vars';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: vars.$color-secondary;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+main {
+    flex:1;
+    padding: 1rem;
+}
+
+h1 {
+    font-family: 'Bree Serif', serif;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: 'Bree Serif', serif;
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: vars.$color-secondary;
+}
+
+p {
+    font-size: 2rem;
+    text-indent: 2rem;
+    text-align: justify;
+    line-height: 2.5rem;
+    margin: 1rem;
+}
+
+label {
+    width: 100%;
+    color: grey;
+    align-self: center;
+
+    a {
+        color: grey;
+    }
+}

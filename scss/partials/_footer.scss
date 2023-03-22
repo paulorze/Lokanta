@@ -1,0 +1,45 @@
+@use './vars';
+
+.footer {
+    width: 100vw;
+    height: fit-content;
+    padding-top: 1rem;
+    background-color: vars.$color-main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__redes {
+        p {
+            color: vars.$color-secondary;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            li {
+                width: 5rem;
+                height: 5rem;
+                
+                img {
+                    width: 100%;
+                    filter: vars.$filter-secondary;
+                }
+            }
+        }
+    }
+
+    a {
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+    }
+}

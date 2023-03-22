@@ -1,0 +1,27 @@
+@use './vars';
+
+.index__aside {
+    margin: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        }
+}
+
+.index__section__cita {
+    font-style: italic;
+}
+
+.index__section__autor {
+    text-align: right;
+    
+    a {
+        color: blue;
+    }
+}
+
+.index__section__aclaracion {
+    font-weight: bold;
+}
