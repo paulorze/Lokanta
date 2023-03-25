@@ -12,27 +12,80 @@ html {
 
 body {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
     background-color: vars.$color-secondary;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: vars.$font-text;
 }
 
 main {
     flex:1;
     padding: 1rem;
+    position: relative;
+}
+
+.esquinero {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.bl {
+    bottom: 2vh;
+    left: 2vw;
+    display: none;
+}
+
+.br {
+    bottom: 2vh;
+    right: 2vw;
+    display: none;
+}
+
+.tl {
+    top: 2vh;
+    left: 2vw;
+}
+
+.tr {
+    top: 2vh;
+    right: 2vw;
 }
 
 h1 {
-    font-family: 'Bree Serif', serif;
+    font-family: vars.$font-title;
     font-size: 3rem;
 }
 
 h2 {
-    font-family: 'Bree Serif', serif;
+    font-family: vars.$font-title;
     font-size: 3rem;
     padding: 1rem;
     text-align: center;
+}
+
+h3 {
+    font-family: vars.$font-title;
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: left;
+}
+
+h4 {
+    font-family: vars.$font-title;
+    font-size: 1.75rem;
+    padding: 1rem;
+    text-align: left;
+    color: vars.$color-secondary;
+    font-style: italic;
+    border-bottom: grey solid 0.1rem;
+    display: inline-block;
+    width: 90%;
 }
 
 a {

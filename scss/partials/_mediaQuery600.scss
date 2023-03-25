@@ -1,0 +1,79 @@
+@media screen and (min-width: 600px) {
+    .br {
+        display: block;
+    }
+
+    .bl {
+        display: block;
+    }
+
+    .index__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .index__aside {
+        width: 45%;
+        display: inline-block;
+    }
+
+    .index__section {
+        width: 55%;
+        display: inline-block;
+    }
+
+    .menu__imagenes {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu__imagenes__sm {
+        display: none;
+    }
+
+    .menu__imagenes__md {
+        display: inline-block;
+    }
+
+    .menu__section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comidas {
+        width: 80%;
+        align-self: center;
+    }
+
+    .sobreNosotros__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .sobreNosotros__section {
+        width: 55%;
+        display: inline-block;
+    }
+
+    .sobreNosotros__aside {
+        width: 45%;
+        display: inline-block;
+        align-items: center;
+    }
+
+    .prensa__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .prensa__section {
+        width: 55%;
+    }
+
+    .prensa__aside {
+        width: 45%;
+    }
+}

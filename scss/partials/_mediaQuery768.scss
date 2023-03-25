@@ -1,0 +1,67 @@
+@media screen and (min-width: 768px) {
+    .horarios__container {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+    }
+
+    .horarios__horarios {
+        width: 50%;
+        display: inline-block;
+    }
+
+    .horarios__direccion {
+        width: 50%;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .horarios__direccion__mapa--sm {
+        display: none;
+    }
+
+    .horarios__direccion__mapa--md {
+        display: block;
+        width: 95%;
+        justify-self: center;
+    }
+
+    .menu__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
+    }
+
+    .menu__section {
+        width: 49%;
+        display: inline-block;
+    }
+
+    .comidas {
+        width: 100%;
+    }
+
+    .menu__imagenes {
+        width: 49%;
+        display: inline-flex;
+        position: sticky;
+        top: 10rem;
+    }
+
+    .carousel {
+        height: 80vh;
+    }
+    
+    .menu__vinos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comidas__vinos {
+        width: 85%;
+    }
+}

@@ -1,0 +1,22 @@
+@media screen and (min-width: 1200px) {
+    .sobreNosotros__aside {
+        max-height: 40vh;
+
+        img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .prensa__aside {
+        max-height: 40vh;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@media screen and (min-width: 900px) {
+    .header {
+        justify-content: space-between;
+    }
+
+    .header__static {
+        width: 20%;
+
+        &__title {
+            left: 7vw;
+            width: fit-content;
+        }
+    }
+
+    .header__navbar {
+        width: 75%;
+
+        &__icon {
+            display: none;
+        }
+
+        &__ul {
+            width: 100%;
+            top: 1.5rem;
+            flex-direction: row;
+            transition: all 0s;
+            z-index: 1;
+
+            &.open {
+                top: 1.5rem;
+            }
+
+            &__li {
+                opacity: 1;
+    
+                &:nth-child(1) {
+                    transition: all 0s;
+                }
+    
+                &:nth-child(2) {
+                    transition: all 0s;
+                }
+    
+                &:nth-child(3) {
+                    transition: all 0s;
+                }
+    
+                &:nth-child(4) {
+                    transition: all 0s;
+                }
+    
+                &:nth-child(5) {
+                    transition: all 0s;
+                }
+            }
+        }
+    }
+
+    .fade-in-der {
+        animation: fadeInDer 2s ease-in-out;
+    }
+
+    @keyframes fadeInDer {
+        from {opacity: 0; transform: translate(100px)}
+        to {opacity: 1; transform: translate(0);}
+    }
+}

@@ -1,0 +1,35 @@
+@use './vars';
+
+.prensa__container {
+    border-radius: 0.5rem;
+    border: vars.$color-main solid 2px;
+    margin: 1rem;
+    padding-bottom: 1rem;
+}
+
+.prensa__section {
+    display: flex;
+    flex-direction: column;
+    a {
+        color: vars.$color-main;
+        background-color: vars.$color-highlight;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+        font-style: italic;
+        font-weight: bold;
+        align-self: center;
+    }
+}
+
+.prensa__aside {
+    margin: 1rem;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 0.5rem;
+    }
+}
